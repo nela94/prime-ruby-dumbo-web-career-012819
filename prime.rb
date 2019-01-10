@@ -1,8 +1,8 @@
 def prime?(num)
-  x = 2
-    if (num.to_i % x == 0)
-    puts false
-  else
-    true
-  end
+  if num > 1
+   (2..num -1).all? do |x|
+   num % x != 0
+ else
+   false
+end
 end
